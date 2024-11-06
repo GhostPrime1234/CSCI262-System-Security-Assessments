@@ -1,0 +1,44 @@
+C:\Users\michael\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/michael/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -G Ninja -S "C:\Users\michael\OneDrive - University of Wollongong\UOW\Bachelor of Computer Science\Year2\Spring\CSCI262 - System Security\Assessments\Assignment2" -B "C:\Users\michael\OneDrive - University of Wollongong\UOW\Bachelor of Computer Science\Year2\Spring\CSCI262 - System Security\Assessments\Assignment2\cmake-build-debug"
+-- The C compiler identification is GNU 13.1.0
+-- The CXX compiler identification is GNU 13.1.0
+-- Detecting C compiler ABI info
+CMake Warning in C:/Users/michael/OneDrive - University of Wollongong/UOW/Bachelor of Computer Science/Year2/Spring/CSCI262 - System Security/Assessments/Assignment2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tbkjbk/CMakeLists.txt:
+  The object file directory
+
+    C:/Users/michael/OneDrive - University of Wollongong/UOW/Bachelor of Computer Science/Year2/Spring/CSCI262 - System Security/Assessments/Assignment2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tbkjbk/CMakeFiles/cmTC_09b02.dir/./
+
+  has 237 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    CMakeCCompilerABI.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/michael/AppData/Local/Programs/CLion/bin/mingw/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+CMake Warning in C:/Users/michael/OneDrive - University of Wollongong/UOW/Bachelor of Computer Science/Year2/Spring/CSCI262 - System Security/Assessments/Assignment2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ewdklu/CMakeLists.txt:
+  The object file directory
+
+    C:/Users/michael/OneDrive - University of Wollongong/UOW/Bachelor of Computer Science/Year2/Spring/CSCI262 - System Security/Assessments/Assignment2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ewdklu/CMakeFiles/cmTC_21f4f.dir/./
+
+  has 237 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    CMakeCXXCompilerABI.cpp.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/michael/AppData/Local/Programs/CLion/bin/mingw/bin/g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/michael/OneDrive - University of Wollongong/UOW/Bachelor of Computer Science/Year2/Spring/CSCI262 - System Security/Assessments/Assignment2/cmake-build-debug
