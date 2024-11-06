@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Set Up MFA</h2>
+<p>Scan this QR code with your authenticator app:</p>
+<img src="data:image/png;base64,{{ img_data }}" alt="MFA QR Code">
+<p>After scanning, enter the OTP below to complete the MFA setup:</p>
+<form method="POST" action="{{ url_for('main.mfa_setup', user_id=current_user.id) }}">
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.otp.label }}<br>
+        {{ form.otp(size=32) }}
+    </div>
+    <button type="submit">Complete MFA Setup</button>
+</form>
+{% endblock %}

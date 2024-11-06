@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Register</h2>
+<form method="POST" action="{{ url_for('main.register') }}">
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.username.label }}<br>
+        {{ form.username(size=32) }}
+    </div>
+    <div>
+        {{ form.password.label }}<br>
+        {{ form.password(size=32) }}
+    </div>
+    <div>
+        {{ form.confirm_password.label }}<br>
+        {{ form.confirm_password(size=32) }}
+    </div>
+
+    <div id="password-criteria">
+        <p id="uppercase"><i class="icon"></i> At least one uppercase letter</p>
+        <p id="lowercase"><i class="icon"></i> At least one lowercase letter</p>
+        <p id="digit"><i class="icon"></i> At least one digit</p>
+        <p id="special"><i class="icon"></i> At least one special character</p>
+        <p id="no-spaces"><i class="icon"></i> No spaces allowed</p>
+        <p id="min-length"><i class="icon"></i> At least 8 characters</p>
+        <p id="password-match"><i class="icon"></i> Passwords must match</p>
+    </div>
+
+    <div>
+        {{ form.first_name.label }}<br>
+        {{ form.first_name(size=32) }}
+    </div>
+    <div>
+        {{ form.last_name.label }}<br>
+        {{ form.last_name(size=32) }}
+    </div>
+    <div>
+        {{ form.email.label }}<br>
+        {{ form.email(size=32) }}
+        <p id="email-validity"><i class="icon"></i> Email must be valid</p>
+    </div>
+    
+    <button type="submit">Register</button>
+</form>
+
+<script src="{{ url_for('static', filename='js/registration_validation.js') }}"></script>
+{% endblock %}

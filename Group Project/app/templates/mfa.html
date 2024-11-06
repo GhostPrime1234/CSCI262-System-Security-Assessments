@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>MFA Challenge</h2>
+<p>Enter the OTP from your authenticator app to complete the challenge:</p>
+<form method="POST" action="{{ url_for('main.mfa') }}">
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.otp.label }}<br>
+        {{ form.otp(size=32) }}
+    </div>
+    <button type="submit">Complete MFA</button>
+</form>
+{% endblock %}
