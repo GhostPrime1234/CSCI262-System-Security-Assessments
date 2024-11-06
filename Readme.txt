@@ -1,5 +1,3 @@
-# CSCI262_Assignment1
- 
 Simple File System with User Authentication
 
 --- Overview ---
